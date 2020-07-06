@@ -1,5 +1,7 @@
 sudo: required
 language: python
+notifications:
+  email: false
 matrix:
   include:
     - name: "Python 2.7 Xenial"
@@ -16,6 +18,14 @@ matrix:
       dist: xenial
     - name: "Python 3.8-dev Xenial"
       python: 3.8-dev
+      dist: xenial
+    - name: "Python 3.7 Xenial"
+      python: 3.7
+      arch: arm64
+      dist: xenial
+    - name: "Python 3.8-dev Xenial"
+      python: 3.8-dev
+      arch: arm64
       dist: xenial
     - name: "Python 2.7 Trusty"
       python: 2.7
